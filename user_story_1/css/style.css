@@ -28,11 +28,11 @@ h2{
 #quote{
     color:black;
 }
-#tribute-link{
+#tribute-div{
     color:#252525c7;
 }
 
-#tribute-link a{
+#tribute-link {
     color:steelblue;
 
 }
@@ -57,15 +57,21 @@ ul{
     background-color: white;
     margin:0 15px;
     text-align:center;
+    
 }
 
 #img-caption{
     margin:0px auto;
     padding:15px 0px;
-    text-align:center;
-    
+    text-align:center; 
 }
 
+#image{
+    margin:0 auto;
+    max-width:100%;
+    height:auto;
+    display:block;
+}
 
 #tribute-info{
     padding :10px 10px;
@@ -95,7 +101,7 @@ li{
     padding:10px;
 }
 
-#tribute-link{
+#tribute-div{
     padding:5px 0px;
 
 }
