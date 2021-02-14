@@ -1,15 +1,18 @@
 body{
     margin:0;
     background-image: url('https://wallpaperaccess.com/full/4230678.jpg');
-    background-size: 100% auto;
+    background-size: cover ;
     background-repeat: no-repeat;
     max-width:100%;    
-    height: auto;
+    background-position: center center;
+    background-attachment: fixed;
+    box-sizing: border-box;
+    
 }
 
 /*====Typography====*/
 body{
-    font-size:20px;
+    font-size:22px;
     color:wheat;
 }
 
@@ -29,16 +32,49 @@ body{
     text-align: left;
     background-color:#808080;
     max-width:100%;
-    width:1000px;
-    padding:10px 10px;
-    
+    width:600px;
+    padding:10px 20px;
+    opacity: 0.5;
+    border-radius:10px;
+
 }
+
 
 header{
     margin:0 auto;  
     text-align: center;
 }
 
+[type~="radio"] ,[type~="checkbox"]  {
+    margin:10px 10px ;
+    
+}
 
+[type~="text"], #dropdown{
+    border-radius:10px;
+    padding:10px;
+    width:550px;   
+}
+
+#textarea{
+    /* border:2px red solid; */
+    padding:0px 10px;
+    height:100px;
+    margin:10px 20px;
+}
+
+button{
+    padding:10px 10px;
+    background-color:#58af4f ;
+    color:white;
+    margin:0 40px;
+    width:550px;
+
+}
+
+.sub-headings{
+    margin:15px 0px;
+
+}
 
 
