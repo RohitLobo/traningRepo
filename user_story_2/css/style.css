@@ -1,0 +1,44 @@
+body{
+    margin:0;
+    background-image: url('https://wallpaperaccess.com/full/4230678.jpg');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    max-width:100%;    
+    height: auto;
+}
+
+/*====Typography====*/
+body{
+    font-size:20px;
+    color:wheat;
+}
+
+#title{
+    font-size:38px;
+}
+
+.sub-headings{
+    font-size: 22px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom:2px;
+}
+
+/*====Layout====*/
+#form{
+    margin:0 auto;  
+    text-align: left;
+    background-color:#808080;
+    max-width:100%;
+    width:1000px;
+    padding:10px 10px;
+    
+}
+
+header{
+    margin:0 auto;  
+    text-align: center;
+}
+
+
+
+
