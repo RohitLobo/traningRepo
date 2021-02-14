@@ -13,97 +13,85 @@
                 <h1 id='title'>freeCodeCamp Survey form</h1>
                 <p id='description'>Thank you for taking the time to help us improve the platform</p>
             </header>    
-
             <div id='form'>
-                <div class='form-elements' >
-                    <h2 class='sub-headings'>Name</h2>
-                    <form>
-                        <input type='text' id='name' placeholder="Enter your name">
-                    </form>
-                </div> <!--Name div-->
+                <form id='survey-form'>
+                    <form id="name-label">
+                        <label class='sub-headings'>Name</label>
+                        <input type='text' id='name' placeholder="Enter your name" required>
+                    </form><!--Name form-->
 
-                <div  class='form-elements'>
-                    <h2 class='sub-headings'>Email</h2>
-                    <form>
-                        <input type='text' id='email' placeholder="Enter your Email">
-                    </form>
-                </div> <!--Email div-->
+                    <form id="email-label">
+                        <label class='sub-headings'>Email</label>
+                        <input type='text' id='email' placeholder="Enter your Email" required>
+                    </form> <!--Email form-->
 
-                <div class='form-elements'>
-                    <h2 class='sub-headings'>Age(optional)</h2>
+                    <form id="number-label">
+                        <label class='sub-headings'>Age(optional)</label>
+                        <input type='text' id='number' placeholder="Age" required>
+                    </form> <!--Age form-->
+                    
                     <form>
-                        <input type='text' id='number' placeholder="Age">
-                    </form>
-                </div> <!--Age div-->
-                
-                <div class='form-elements'>
-                    <h2 class='sub-headings'>Which option best describes your current role?</h2>
+                        <label class='sub-headings'>Which option best describes your current role?</label>
+                        <label for='roles'>
+                            <select name='roles' id='dropdown' >
+                                <option value='student' >Student</option>
+                                <option value='Full-time Job'>Full-time Job</option>
+                                <option value='Full-time Learner'>Full-time Learner</option>
+                                <option value='Prefer not to say'>Prefer not to say</option>
+                                <option value='Other'>Other</option>
+                            </select>
+                        </label>    
+                    </form> <!--Roles form-->
+
                     <form>
-                        <label for='roles'></label>
-                        <select name='roles' id='dropdown'>
-                            <option value='student'>Student</option>
-                            <option value='Full-time Job'>Full-time Job</option>
-                            <option value='Full-time Learner'>Full-time Learner</option>
-                            <option value='Prefer not to say'>Prefer not to say</option>
-                            <option value='Other'>Other</option>
-                        </select>
-                        
-                    </form>
-                </div> <!--Roles div-->
+                        <label class='sub-headings'>Would you recommend free code camp to a friend?</label><br>
+                        <input type='radio' name='recommend' value ="Definitely" checked>Definitely<br>
+                            <input type='radio' name='recommend' value="Maybe" >Maybe<br>
+                            <input type='radio' name='recommend' value="Not sure">Not sure
+                    </form> <!--Recommendation form-->
 
-                <div class='form-elements'>
-                    <h2 class='sub-headings'>Would you recommend free code camp to a friend?</h2>
-                    <form id="radio-btns">
-                       <input type='radio' name='recommend' checked>Definitely<br>
-                        <input type='radio' name='recommend' >Maybe<br>
-                        <input type='radio' name='recommend' >Not sure
-                    </form>
-                </div>
-
-                <div class='form-elements'>
-                    <h2 class='sub-headings'>What is your favourite feature of freeCodeCamp?</h2>
                     <form>
-                        <label for='feature'></label>
-                        <select name='feature' id='dropdown'>
-                            <option value='Challenges'>Challenges</option>
-                            <option value='Projects'>Projects</option>
-                            <option value='Community'>Community</option>
-                            <option value='Open source'>Open source</option>
-                        </select>
-                    </form>
-                </div>
+                        <label for='feature' class='sub-headings'>What is your favourite feature of freeCodeCamp?</label>
+                            
+                            <select name='feature' id='dropdown'>
+                                <option value='Challenges'>Challenges</option>
+                                <option value='Projects'>Projects</option>
+                                <option value='Community'>Community</option>
+                                <option value='Open source'>Open source</option>
+                            </select>
+                        </label>
+                    </form> <!--Feature form-->
 
-                <div class='form-elements'>
-                    <h2 class='sub-headings'>What would you like to see improved? (check all that apply)</h2>
                     <form id='checkbox'>
-                        <label for="front-end"><input id='front-end' type='checkbox' name='Improvement' >Front-end projects</label><br>
-                        <label for="back-end"><input id='back-end' type='checkbox' name='Improvement' >Back-end projects</label><br>
-                        <label for="data-visualization"><input id='Data Visualization' type='checkbox' name='Improvement' >Data Visualization</label><br>
-                        <label for="challenges"><input id='challenges' type='checkbox' name='Improvement' >Challenges</label><br>
-                        <label for="open-source"><input id='open-source' type='checkbox' name='Improvement' >Open source community</label><br>
-                        <label for="gitter-help-rooms"><input id='gitter-help-rooms' type='checkbox' name='Improvement' >Gitter Help Rooms</label><br>
-                        <label for="videos"><input id='videos' type='checkbox' name='Improvement' >Videos</label><br>
-                        <label for="city-meetups"><input id='city-meetups' type='checkbox' name='Improvement' >City Meetups</label><br>
-                        <label for="wiki"><input id='wiki' type='checkbox' name='Improvement' >Wiki</label><br>
-                        <label for="forum"><input id='forum' type='checkbox' name='Improvement' >Forum</label><br>
-                        <label for="additional_courses"><input id='additional_courses' type='checkbox' name='Improvement' >Additional Courses</label><br>
-                    </form>
-                </div>
+                        <label class='sub-headings'>What would you like to see improved? (check all that apply)</label><br>
+                            <label for="front-end"><input id='front-end' type='checkbox' name='Improvement'value="front-end-projects" >Front-end projects</label><br>
+                            <label for="back-end"><input id='back-end' type='checkbox' name='Improvement' value="back-end-projects">Back-end projects</label><br>
+                            <label for="data-visualization"><input id='Data Visualization' type='checkbox' name='Improvement' value="data-visualization" >Data Visualization</label><br>
+                            <label for="challenges"><input id='challenges' type='checkbox' name='Improvement' value="challenges" >Challenges</label><br>
+                            <label for="open-source"><input id='open-source' type='checkbox' name='Improvement' value="open-source-community" >Open source community</label><br>
+                            <label for="gitter-help-rooms"><input id='gitter-help-rooms' type='checkbox' name='Improvement' value="gitter-help-rooms" >Gitter Help Rooms</label><br>
+                            <label for="videos"><input id='videos' type='checkbox' name='Improvement'value="videos" >Videos</label><br>
+                            <label for="city-meetups"><input id='city-meetups' type='checkbox' name='Improvement' value="city-meetups" >City Meetups</label><br>
+                            <label for="wiki"><input id='wiki' type='checkbox' name='Improvement' value="wiki" >Wiki</label><br>
+                            <label for="forum"><input id='forum' type='checkbox' name='Improvement' value="forum"  >Forum</label><br>
+                            <label for="additional_courses"><input id='additional_courses' type='checkbox' name='Improvement' value="additional-courses"  >Additional Courses</label><br>
+                        
+                    </form> <!--Improvement form-->
 
-                <div class='form-elements' >
-                    <h2 class='sub-headings'>Any comments or suggestions?</h2>
                     <form action="https://freecodecamp.com">
-                        <input id='textarea' type='text' placeholder="Enter your comment here..."><br>
-                        <button>Submit</button>
-                    </form>
-                </div>
+                        <label class='sub-headings'>Any comments or suggestions?</label>
+                        <textarea type='text' placeholder="Enter your comment here..."></textarea><br>
+                        <button type='submit' id="submit">Submit</button>
+                        
+                    </form><!--comment  form-->
 
 
 
 
 
 
-            </div>
+                </form><!--.survey form-->
+            </div><!--/form-->    
         </main>
 
 

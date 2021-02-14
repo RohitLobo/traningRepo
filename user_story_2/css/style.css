@@ -20,10 +20,10 @@ body{
     font-size:38px;
 }
 
-.sub-headings{
+label{
     font-size: 22px;
     font-family: 'Courier New', Courier, monospace;
-    margin-bottom:2px;
+    margin-bottom:20px;
 }
 
 /*====Layout====*/
@@ -56,14 +56,14 @@ header{
     width:550px;   
 }
 
-#textarea{
+textarea{
     /* border:2px red solid; */
     padding:0px 10px;
     height:100px;
     margin:10px 20px;
 }
 
-button{
+#submit{
     padding:10px 10px;
     background-color:#58af4f ;
     color:white;
