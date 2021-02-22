@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>User Story 2 - Survey Form</title>
+        <title>User Story 3 - Product page</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width-device-width intial-scale=1">
         <link href="css/style.css" rel="stylesheet">
@@ -9,7 +9,7 @@
 
     <body>
        <header id='header'>
-           <div class='container'>
+           <div class='container nav-bar-container'>
                <div class='logo'>
                     <img src='images/logo.jpg' alt='pithfork logo' id='header-img'>
                 </div>
@@ -17,7 +17,7 @@
                     <ul>
                         <li><a href='#Artists' class='nav-link'>Artists</a></li>
                         <li><a href='#How it works' class='nav-link'>How it works</a></li>
-                        <li><a href='#Pricing'class='nav-link'>Pricing</a></li>
+                        <li><a href='#pricing'class='nav-link'>Pricing</a></li>
                     </ul>
 
                 </nav>
@@ -30,8 +30,8 @@
             <div class='container'>
                 <div class='subscribe'>
                     <h2>Pitchfork, music at it's best!!! </h2>
-                    <form action='https://www.freecodecamp.com/email-submit' method='post' id='form'>
-                        <input id='email' type='email' placeholder="Enter your email address"></input>
+                    <form action='https://www.freecodecamp.com/email-submit' id='form'>
+                        <input id='email' type='email' name='email' placeholder="Enter your email address"></input>
                          <input id ='submit' class='btn-link' type='submit' value="Get started"></input>
                     </form>
                 </div>
@@ -56,6 +56,7 @@
                             <p class='offers-content-subtitle'>Popular Giants of today's classical music on display</p>
                         </div>
                     </div>
+
                     <div class='description'>
                         <img src="images/stage.svg" class='icon'>
                         <div class='offers-content'>
@@ -67,10 +68,75 @@
 
                 </div>
                 
-            </div>
+            </div> <!--Offers+Icons and descriptopm-->
+
+
+            <div class='container'>
+                <iframe id='video' src="https://youtu.be/_z6BXpBDSGY"></iframe>
+
+            </div>    
+
+            <div class='container'>
+                <div id='pricing'>
+                    <div class='card'>
+                        <div class='card-title'>Premium</div>
+                        <h4>$250</h4>
+                        <ul>
+                            <li>Valid for 5 days</li>
+                            <li>Access to all stages</li>
+                            <li>Backstage pass</li>
+                            <li>Free drinks</li>
+                        </ul>
+                        <p><a href="#" class='btn-select'>Select </a></p>
+                    </div>
+
+
+                    <div class='card'>
+                        <div class='card-title'>Deluxe</div>
+                        <h4>$150</h4>
+                        <ul>
+                            <li>Valid for 3 days</li>
+                            <li>Access to 3 stages</li>
+                            <li>Free autograpghs</li>
+                            <li>Free drinks</li>
+                        </ul>
+                        <p><a href="#" class='btn-select'>Select </a></p>
+                    </div>
+
+
+                    <div class='card' id='Artists'>
+                        <div class='card-title'>Solo</div>            
+                        <h4>$75</h4>
+                        <ul>
+                            <li>Valid for 1 day</li>
+                            <li>Access to 2 stages</li>
+                            <li>Free CD's</li>
+                            <li>Free drinks</li>
+                        </ul>
+                        <p><a href="#" class='btn-select'>Select </a></p>
+                            
+                    </div><!--last card-->
+
+                </div>   <!---Pricing container withingcard-->
+
+            </div> <!--End of card container\-->
 
 
         </main>
+
+        <footer>
+            <div class='container'>
+                <div class="footer">
+                    <a href="#" class='footer-links'>Privacy</a>
+                    <a href="#" class='footer-links'>Terms</a>
+                    <a href="#" class='footer-links'>Contract</a>
+                    <p>Copyright 2021, Rohit</p>
+                </div>
+
+            </div>
+
+
+        </footer>
                        
     </body>     
 
