@@ -2,6 +2,8 @@ body{
     margin:0;
     font-size:0.75rem;
     background-color: #EEEEEE;
+    font-family: 'Fira Sans', sans-serif;
+
     
 }
 
@@ -19,6 +21,7 @@ h2{
 .card-title{
     font-size:1.0rem;
     margin:0;
+    font-family: 'Rubik', sans-serif;
 }
 
 .card ul{
@@ -127,6 +130,7 @@ width:15%;
 .card-title{
     background-color: gray;
     width: 100%;
+    font-size: 1.25rem;
     
 }
 
@@ -206,10 +210,11 @@ width:15%;
 
 
 .nav-link {
-    font-size:1.0rem;
+    font-size:1.25rem;
     font-weight: 400;
     color:black;
     text-decoration: none;
+    font-family: 'Rubik', sans-serif;
 }
 
 .nav-link:hover, .nav-link:focus {
