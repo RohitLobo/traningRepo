@@ -1,0 +1,147 @@
+body{
+font-size: 0.80rem;
+margin:0;
+background-color: #FFFFFF;
+color:rgba(12, 12, 12, 0.664);
+}
+
+
+
+
+/*Typography*/
+
+header{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.code-block{
+    font-size: 0.75rem;
+    font-family: monospace;
+}
+
+
+
+
+
+/*Layout*/
+.document-menu-title{
+    padding:0.5em; 
+    text-align: center;
+    color:black;    
+}
+
+.container-flex{
+    max-width:2000px;
+    width:100%;
+    /* border:2px red solid; */
+}
+
+#main-doc{
+    width:90%;
+    
+}
+
+@media (min-width:550px){
+    .container-flex{
+        display:flex;
+    }
+
+    .container-nav{
+        width:20%;
+        border-right:3px solid gray;
+    }
+    .container-main{
+        width:65%;
+    }
+}
+
+/*navigation */
+#navbar{
+    height:250px;
+    width:100%;
+    overflow: auto;
+}
+
+#navbar ul {
+    padding:0;
+    margin:0;
+    border:0.5px solid black;
+}
+#navbar li {
+    list-style: none;
+    border-bottom:0.25px  solid gainsboro;
+    border-top: 0.25px  solid gainsboro;
+    margin:0;
+    padding:0;
+    padding:0.5em 1.5em;
+    text-align: left;
+    
+}
+
+#navbar li:last-child{
+    border-bottom:0;
+}
+
+#navbar li:first-child{
+    border-top: 0.5px  solid rgb(19, 17, 17);
+}
+
+#navbar a{
+    text-decoration:none;
+    color: rgb(105, 105, 105);
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+#navbar a:hover,#navbar a:focus {
+    text-decoration:none;
+    color: rgb(23, 23, 218);
+}
+
+@media (min-width:550px){
+    #navbar{
+        overflow:visible;
+
+    }
+
+    #navbar ul {
+        border:0;
+    }
+    #navbar li:first-child{
+        border-top: 0.25px  solid gainsboro; 
+        
+    }
+
+
+}
+/*Main-section*/
+
+.main-section{
+    padding: 0.25em 1.5em ;
+    margin-top:1em;
+    width: 100%;
+ }
+
+ .main-doc-title{
+    font-weight: bolder;
+    color:black;
+    margin-bottom:1em;
+
+ }
+
+.main-section li{
+        margin:1em 0 0 1em;
+}
+
+.code-container{
+    background-color: #F7F7F7;
+    padding: 0.75em;
+    margin-left:0.75em;
+}
+
+.code-block{
+    
+    text-align: center;
+
+}
