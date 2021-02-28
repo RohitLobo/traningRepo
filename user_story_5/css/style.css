@@ -1,0 +1,173 @@
+body{
+    margin:0;
+    font-size: 1rem;
+}
+
+h1{
+    font-size: 3rem;    
+}
+
+h2{
+ font-size: 1.50rem;
+ }
+
+h1,h2{
+    color:whitesmoke;
+    padding:0.5em;
+}
+
+h1,h2,p{
+    margin:0;
+}
+
+/*Typography*/
+
+.subtitle{
+    color:#B52F40;
+    font-size: 1.50rem;
+    padding:0.5em;
+}
+
+
+
+
+/*Layout*/
+
+.container{
+    width:100%;
+    max-width:2500px;
+    /* border:2px red solid; */
+}
+
+
+/*navbar*/
+
+.container-nav{
+    background-color: #B52F40;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;  
+    padding:0;
+    }
+
+
+#navbar{
+    
+    display: flex;
+    justify-content: flex-end;
+    /* padding:0.5em 0; */
+}
+
+#navbar ul{
+    list-style: none;
+    padding:0;
+    margin:0;
+    display: flex;
+    justify-content: center;    
+}
+
+#navbar li{
+    padding:1em 0;
+    margin:0em 1em;
+}
+
+#navbar a {
+    text-decoration: none;
+    font-size:1.25rem;
+    color:white;
+    padding:1em ;
+    
+}
+
+#navbar a:hover,#navbar a:focus  {
+       background-color:#45567D ;
+}
+
+/*welcome-secton*/
+.container-welcome-section{
+    max-height:100vh;
+}
+#welcome-section{
+    background: linear-gradient(#0a0a11,#2b2a2a);
+    height:100vh;   
+    
+}
+
+.welcome-section-title{
+    text-align: center;
+    transform: translateY(30vh);
+}
+
+
+/*Project secton*/
+
+.container-projects{
+    background-color: #45567D;
+}
+
+#projects{
+    text-align: center;
+    width:90%;
+    margin:0 auto;
+}
+
+.project-heading{
+border-bottom:2px white solid;
+margin-bottom:1em;
+}
+
+
+.project-tile{
+    margin-bottom:1.0em;
+    /* border:2px orange solid; */
+}
+
+.project-tile-title{
+    color:white;
+    background:black;
+    opacity:0.6;
+    padding:1em;
+}
+
+.project-tile img {
+  max-width:100%;
+  width:100%;
+  display: block;
+}
+
+.project-tile a{
+    text-decoration: none;
+}
+
+.project-show-all{
+    padding:1em 0;
+
+
+}
+.btn-show-all{
+    padding:1em;
+    /* border:1px solid yellow; */
+
+}
+
+.btn-show-all a{
+    text-decoration: none;
+    color:white;
+    padding:0.5em 1em;
+    border:1px black solid;
+    background-color: black;
+    opacity: 0.6;
+}
+
+/* .hide{
+    color:orangered;
+    display: none;
+
+}
+
+.project-tile a:hover ~ span ,.project-tile a:focus ~  span{
+    display: visible;
+    color:red;
+
+} */
+

@@ -12,63 +12,83 @@
             <div class='container-nav'>
                 <nav id='navbar'>
                     <ul>
-                        <li>About</li>
-                        <li>Work</li>
-                        <li>Contact</li>
+                        <li><a href='#welcome-section'>About</a></li>
+                        <li><a href='#projects-section'>Work</a></li>
+                        <li><a href='#contact'>Contact</a></li>
                     </ul>
+                    
                 </nav>
             </div><!--navbar container/-->  
             
             
             <div class='container-welcome-section'>
                 <section id='welcome-section'>
-                    <h1>Hello there, I'm Tihor</h1>
-                    <p>A wannabe dev</p>
+                    <div class='welcome-section-title'>
+                        <h1>Hello there, I'm Tihor</h1>
+                        <p class="subtitle">A wannabe dev</p>
+                    </div>
                 </section>
             </div> <!--welcome-section container/-->   
 
-            
+            <!--Project section-->
             <div class='container-projects'>
                 <section id='projects'>
-                    <h2>These are some of my projects</h2>
-                    <div id='project-tile'>
+                    <h2 class='project-heading'>These are some of my projects</h2>
+                    <div id='project-tile-container'>
                         <div class=project-tiles-row1>
-                            <div class='project-tile-card'></div>
-                            <div class='project-tile-card'></div>
-                            <div class='project-tile-card'></div>
+                            <div class='project-tile'>
+                                <a href='#'><img src='images/norman.jpg' alt='Norman Bourloug in a field with crops in his hand'>
+                                <div class='project-tile-title'>Tribute page</div></a>
+                            </div>
+                            <div class='project-tile'>
+                                <a href='#'><img src='images/oblique.jpg' alt='box of oblique strategy cards'>
+                                <div class='project-tile-title'><span class='hide'>&lt</span> Oblique Strategies<span class='hide'>/&gt</span></div></a>
+                            </div>
+                            <div class='project-tile'>
+                                <img src='images/calcul.jpg' alt='js calculator'>
+                                <div class='project-tile-title'>Calculette</div>
+                            </div>
                         </div>
 
                         <div class=project-tiles-row2>
-                            <div class='project-tile-card'></div>
-                            <div class='project-tile-card'></div>
-                            <div class='project-tile-card'></div>
+                            <div class='project-tile'>
+                                <img src='images/map.png' alt='map from google'>
+                                <div class='project-tile-title'>Map </div>
+                            </div>
+                            <div class='project-tile'>
+                                <img src='images/wiki.jpg' alt='Wikipedia clone'>
+                                <div class='project-tile-title'>Wiki clone</div>
+                            </div>
+                            <div class='project-tile'>
+                                <img src='images/ttt.png'  alt='Tic tac toe with js'>
+                                <div class='project-tile-title'>Tic Tac Toe</div>
+                            </div>
                         </div>
                     </div>
-                    <div class='projet-show-all'>
-                        <p><a href='#'></a></p>
-                    </div>
+                    <p class='btn-show-all'><a href='#'>Show All  ></a></p>
+                    
                 </section> <!--Project section/-->
 
             </div><!--Project container/-->
 
-            <div class='container-work'>
-                <section class='work-section'>
-                    <div class='work title'>
-                        <h2></h2>
-                        <p></p>
+            <div class='container-contact'>
+                <section id='contact'>
+                    <div class='contact-title'>
+                        <h2>Let's work together</h2>
+                        <p>How do you take your coffee?</p>
                     </div>
-                    <div class='work-links'>
-                        <div id='profile-link'><img src='images/fb.svg' alt='faceBook logo'><h3>Facebook</h3></div>
-                        <div id='profile-link'><img src='images/github.svg'  alt='github logo'><h3>Github</h3></div>
-                        <div id='profile-link'><img><h3>Twitter</h3></div>
-                        <div id='profile-link'><img><h3>Send a mail</h3></div>
-                        <div id='profile-link'><img><h3>Call me</h3></div>
+                    <div class='contact-links'>
+                        <a id="profile-link" href='#' target="_blank"><i src='#' alt='faceBook logo'>Facebook</a>
+                        <a id="profile-link" href='https://github.com/RohitLobo/' target="_blank"><i src='#'  alt='github logo'></i>Github</a>
+                        <a id="profile-link" href='#' target="_blank"><i></i>Twitter/a>
+                        <a id="profile-link" href='#' target="_blank"><i></i>Send a mail</a>
+                        <a id="profile-link" href='#' target="_blank"><i></i>Call me</a>
                     </div>
 
 
 
                 </section><!--Work section/-->
-            </div><!--work container/-->
+            </div><!--contact container/-->
 
             <div class='container-footer'>
                 <footer class='footer-section' >
