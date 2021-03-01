@@ -89,13 +89,17 @@ h1,h2,p{
 }
 #welcome-section{
     background: linear-gradient(#0a0a11,#2b2a2a);
-    height:100vh;   
+    height:100vh;
+    display:flex;   
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     
 }
 
 .welcome-section-title{
     text-align: center;
-    transform: translateY(30vh);
+    
 }
 
 
@@ -184,6 +188,33 @@ margin-bottom:1em;
     opacity:1;
 }
 
+
+@media (min-width:0px) and (max-width:470px){
+    .project-tile{
+        width:100%;
+        margin-bottom: 2em;    
+    }
+
+
+}
+
+
+@media (min-width:550px){
+    .project-tile{
+        width:40%;
+        margin-bottom: 2em;    
+    }
+}
+
+@media (min-width:735px){
+    .project-tile{
+        width:30%;
+        margin-bottom: 2em;    
+    }
+    
+
+}
+
 /* .hide{
     color:orangered;
     display: none;
@@ -200,7 +231,7 @@ margin-bottom:1em;
 
 .container-contact{
     background-color: #303841;
-    padding:5em;
+    padding:5em 0em;
     border-bottom:#B52F40 2px solid;
 }
 
@@ -219,15 +250,18 @@ margin-bottom:1em;
 .contact-links{
     text-align: center;
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-flow: nowrap;
     margin-right:2em;
-    
-    
+    width:100%;
+
 }
 
 #profile-link{
     text-decoration: none;
     color:white;
+    width:25%;
+    /* border:2px red solid; */
 }
 
 #profile-link:hover,#profile-link:focus{
@@ -241,14 +275,35 @@ margin-bottom:1em;
 
 #profile-link img{
     max-width:100px;
-    width: 15%;  
+    width: 50%;  
+}
+
+@media (min-width:0px) and (max-width:470px){
+    #profile-link img{
+        width:40%;    
+    }
+}
+
+
+@media (min-width:550px){
+    #profile-link img{
+        width:30%;    
+    }
+}
+
+@media (min-width:735px){
+    #profile-link img{
+        width:20%;
+    }
+    
+
 }
 
 
 /*footer secton*/
 .container-footer{
     background-color: #303841;
-    padding:1.5em;
+    padding:2.5em;
 }
 
 .footer-section{
@@ -256,5 +311,8 @@ margin-bottom:1em;
     font-size: 0.75rem;
     color:white;
     justify-content: space-between;
+}
 
+.footer-wording-copyright{
+    width:15%;
 }
