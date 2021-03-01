@@ -118,20 +118,35 @@ margin-bottom:1em;
 }
 
 
+#project-tile-container{
+    display: flex;
+    justify-content: space-around;
+    flex-flow:wrap;
+
+}
+
 .project-tile{
-    margin-bottom:2.0em;
+    width:40%;
+    /* border:2px orange solid; */
+    margin-bottom: 2em;
+    
 }
 
 .project-tile-title{
     color:white;
     background:black;
     opacity:0.6;
-    padding:1em;
+    text-align: center;
+    padding:0.5em;
 }
 
 .project-tile img {
   max-width:100%;
+  max-height:100%;
   width:100%;
+  height:90%;
+  object-fit: cover;
+  object-position: center;
   display: block;
 }
 
@@ -139,11 +154,7 @@ margin-bottom:1em;
     text-decoration: none;
 }
 
-.project-show-all{
-    padding:1em 0;
 
-
-}
 .btn-show-all{
     padding:1em;
 }
@@ -184,6 +195,7 @@ margin-bottom:1em;
 
 .container-contact{
     background-color: #303841;
+    padding:5em;
 }
 
 .contact-title{
@@ -201,21 +213,25 @@ margin-bottom:1em;
 .contact-links{
     text-align: center;
     display:flex;
-    justify-content: space-between;
-    flex-flow: wrap;
+    justify-content: space-around;
+    /* flex-flow: wrap; */
     
 }
 
 #profile-link{
     text-decoration: none;
     color:white;
-    margin-bottom:1.5em;
-    padding:0 0.5em;    
+    margin-bottom:1.5em;    
+    /* padding:0 0.5em;     */
     /* border:2px red solid; */
 
 }
 
 #profile-link img{
     max-width:100px;
-    width: 20%;  
+    width: 15%;  
 }
+
+
+/*footer secton*/
+
