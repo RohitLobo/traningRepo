@@ -34,15 +34,31 @@ public class Main {
                 case(1):
                     L_eye.getDetails();
                     L_eye.getEyeColor();
-                    System.out.println("1. Close the eye \n");
-                     userChoice= userInput.nextInt();
-                    if (userChoice==1){
-                        System.out.println("eye closed \n");
-                        continue;
+                    if (L_eye.Isclosed()==false) {
+                        System.out.println("1. Close the eye \n");
+                        userChoice = userInput.nextInt();
+                        if (userChoice == 1) {
+                            L_eye.setEyeclosed();
+                            System.out.println("eye closed \n");
+                            continue;
+                        } else {
+                            continue;
+                        }
                     }
-                    else{
-                        continue;
-                    }
+                    else {
+                            System.out.println("1. open the eye \n");
+                            userChoice= userInput.nextInt();
+                            if (userChoice==1){
+                                L_eye.setEyeopen();
+                                System.out.println("eye open \n");
+                                continue;
+                            }
+                            else{
+                            continue;
+                            }
+                        }
+
+
 
                 case (2):
                     R_eye.getDetails();
@@ -103,7 +119,6 @@ public class Main {
                         skin.setOrganCondition("moist");
                         skin.getSkinCoeff();
                         skin.getOrganCondition();
-
                         continue;
                     }
 
@@ -112,13 +127,16 @@ public class Main {
                     }
 
 
-                case (6):
+                default:
                     isFinsihed = true;
                     System.out.println("Diagnosis terminated");
                     break;
 
 
+
             }
+
+
         }
 
 

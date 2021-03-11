@@ -1,22 +1,32 @@
 package com.example.traininingclass;
 
-public class Eye extends Organ{
+public class Eye extends Organ {
     private String eyeColor;
     private Boolean Isclosed;
 
-    public Eye(String organName, String organCondition, String eyeColor,Boolean Isclosed) {
+    public Eye(String organName, String organCondition, String eyeColor, Boolean Isclosed) {
         super(organName, organCondition);
         this.eyeColor = eyeColor;
-        this.Isclosed =Isclosed;
+        this.Isclosed = Isclosed;
     }
 
-    public void getEyeColor(){
+    public void getEyeColor() {
         System.out.println("Eye Color : " + eyeColor);
 
     }
 
-    public void setEyeColor(String eyeColor) {
+    public Boolean Isclosed(){
+        return Isclosed;
+    }
 
-        this.eyeColor = eyeColor;
+
+
+    public void setEyeclosed() {
+        this.Isclosed = true;
+
+    }
+
+    public void setEyeopen() {
+        this.Isclosed = false;
     }
 }
