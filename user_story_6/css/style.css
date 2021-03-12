@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+
+}
+
+body{
+    margin:0
+
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.search{
+    display: flex;
+    justify-content:space-between;
+}
+
+.btn-search{
+    display: inline-block;
+    margin-top:0;
+}
