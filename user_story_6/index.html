@@ -9,12 +9,12 @@
 
     <body>
         <header class='header container-wide'><!--header-->
-            <p>
-                <a href='#'>One</a>
-                <a href='#'>Two </a>
-                <a href='#'>Three</a>
-                <a href='#'>Four </a>
-            </p>
+            <ul>
+                <li class=page-number><a href='#'>One</a></li>
+                <li class=page-number><a href='#'>Two</a></li>
+                <li class=page-number><a href='#'>Three</a></li>
+                <li class=page-number><a href='#'>Four</a></li>
+            </ul>
             <div class='search'>
               <label for='search-input'>
                   <input id='search-input' type='text' placeholder="Search">
@@ -27,9 +27,8 @@
 
 
         <div class='logo-container container-narrow'><!--Logo+title-->
-            <img src='#' alt='' class='logo'>
             <h1  class='site-title'>Lonely Paris</h1>
-
+            <img src=' images/paris_street.jpg' alt='alley in paris at night with stars in the sky.' class='logo'>
         </div><!--Logo+title/-->
 
 
@@ -47,45 +46,55 @@
             </nav>
         </div>
 
-        <main class='body container-narrow'>
+        <main class='container-narrow'>
             <section class='promoted-article-section'><!--Promoted article section/-->
-                <article class='promoted-article'></article>
-                <aside class='cool article-sidebar'>
-                    <div class='cool-article'></div>
-                    <div class='cool-article'></div>
+                <article class='promoted-article'>
+                    <h3 class='promoted-article-title'>Football brings together migrants</h3>
+                    <img class='promoted-article-image' src='images/suburbs_paris.jpg' alt='Football in the suburbs of paris'>
+                </article>
+                <aside class='cool-article-sidebar'>
+                    <div class='cool-article'>
+                        <h3 class='cool-article-sidebar-title'>HLM paris :Public housing for the dispossessed</h3>
+                        <img class='cool-article-sidebar-image' src='images/HLM_paris.jpg' alt='Public housing appartments in the parisian suburbs'> 
+                    </div>
+                    <div class='cool-article'>
+                        <h3 class='cool-article-sidebar-title'>Paris is burning</h3>
+                        <img class='cool-article-sidebar-image' src='images/news_paris.jpg' alt='headlines in the newspapers about the riots in the suburbs'>
+                    </div>
                 </aside>
             </section> <!--Promoted article section/-->
 
-            <h2 class='section-title'>Breaking News</h2>
+            <h2 class='section-title container-narrow'>Breaking News</h2>
             <section class='breaking-news-container'>
-                <div class='breaking-news-tile'></div>
-                <div class='breaking-news-tile'></div>
-                <div class='breaking-news-tile'></div>
-                <div class='breaking-news-tile'></div>
-                <div class='breaking-news-tile'></div>
+                <img  src='images/marianne.jpg' alt='Graffiti of Marianne' class='breaking-news-tile'>
+                <img  src='images/burkini.jpg' alt='Marianne says no to burkini' class='breaking-news-tile'>
+                <img  src='images/marianne_arab.jpg' alt='Arab version of Marianne ' class='breaking-news-tile'>
+                
             </section>
 
             <h2 class='section-title'>Latest Stories</h2>
             <section class='lastest-stories-section'>
                 <article class='latest-stories-main-container'>
                     <div class='latest-story-body'> 
-                        <h3 class='latest-stories-heading'>Death Star vaporises its own planet</h3>
+                        <h3 class='latest-stories-heading'>Yellow vest protestors join forces with CGT</h3>
+                        <img src='images/yellow_vests.jpg'   alt='Yellow vest protestors join forces with CGT' class='latest-stories-image'>
                         <p class='latest-stories-info'>
-                            <i><p class='info-author'> By Thadeus</p></i>
-                            <i><p class='info-date'>11/23/16</p></i>
-                            <i><p class='info-comment'>6 comments</p></i>
+                            <i class="far fa-id-badge"><span class='info-author'> By Thadeus</span></i>
+                            <i><span class='info-date'>11/23/16</span></i>
+                            <i><span class='info-comment'>6 comments</span></i>
                         </p>
                         <p class='latest-stories-body'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                             Recusandae impedit beatae, ipsum delectus aperiam nesciunt magni facilis ullam.</p>
+                            
                     </div>
-                    <div class='latest-story-image'>
-                        <img src=' '   alt='' class='latest-stories-image'>
-                    </div>
+                    
+                        
+                    
 
                     <div class='latest-story-body'> 
                         <h3 class='latest-stories-heading'>Death Star vaporises its own planet</h3>
                         <p class='latest-stories-info'>
-                            <i><p class='info-author'> By Thadeus</p></i>
+                            <span src='images/user.png'><p class='info-author'> By Thadeus</p></i>
                             <i><p class='info-date'>11/23/16</p></i>
                             <i><p class='info-comment'>6 comments</p></i>
                         </p>
