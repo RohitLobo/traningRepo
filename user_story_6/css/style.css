@@ -48,10 +48,19 @@ h2{
     margin:0 auto;
 }
 
+.publicity-title,.trending-posts-main-title,.image-section-title{
+    margin:0;
+    padding:0.5em 0;
+    margin:0.5em 0;
+    text-align: left;
+}
+
 
 /*header*/
 .header{
-background-color: rgba(151, 144, 144, 0.692);
+    background-color: rgba(151, 144, 144, 0.692);
+    padding:0.5em;
+    margin-bottom: 0.5em;
 }
 
 header ul{
@@ -228,13 +237,15 @@ order:-1;
     padding:0.5em;   
 }
 
+
 .material-icons{
     padding:0.20em;
-
+    /* margin-top:0.55em; */
 }
 .material-icons + span{
     margin:0;
-    padding:0.5em;
+    padding:0.25em;
+    
 }
 
 .latest-stories-body{
@@ -246,6 +257,8 @@ order:-1;
 .page-selector{
     display: flex;
     flex-direction: row;
+    margin:0.5em 0;
+    padding:0.5em;
 }
 
 
@@ -259,9 +272,11 @@ order:-1;
 
 .latest-stories-sidebar{
     padding:1em;
+    margin:0.5em 0;
    
 }
 
+/*Social-media section*/
 
 .social-media{
     display:flex;
@@ -270,6 +285,7 @@ order:-1;
     /* width:100%; */
     padding:1em;
     text-align: center;
+    margin:0.5em 0;
 }
 
 .social-media-main{
@@ -292,14 +308,63 @@ order:-1;
    height:20vh;
 } */
 
-.publicity-title{
+/*sponspored ad section*/
+.sidebar-sponsor{
     margin:0;
-    padding:0.5em 0;
-    text-align: left;
+    padding:0.50em;
+    margin:0.5em 0;
 }
+
+
 
  .publicity-image {
     max-width: 100%;
     display: inline-block;
 } 
+
+
+/*trending-posts*/
+
+.trending-posts{
+    display:flex;
+    width:100%;
+    padding:0.5em;
+    margin-bottom:0.5em;
+}
+
+.trending-posts-image{
+    order:-1;
+    width:30%;
+    background-color: gray;
+    display:inline-block;
+}
+
+.trending-posts-title{
+    width:65%;
+    margin:0;
+    padding:0.25em;
+    margin-left:0.75em;
+ }
+
+/*image-section */
+
+.image-section{
+    padding:1em;
+    margin:0.5em 0;
+}
+
+
+.flickr-images-tile{
+    display:flex;   
+    flex-wrap: wrap;
+    margin:0.5em 0;
+    padding:0.5em;
+}
+
+.flickr-image{
+    width:22%;
+    padding:1em;
+    margin:0.5em;
+
+}
 
