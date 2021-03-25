@@ -1,6 +1,5 @@
 *{
     box-sizing: border-box;
-
 }
 
 body{
@@ -27,6 +26,8 @@ body{
 
 body{
     font-size:1rem;
+    letter-spacing: 0.5px;
+    line-height:1.5;
 }
 
 h1{
@@ -35,12 +36,14 @@ h1{
 
 h2{
     font-size:1.5rem;
+    text-transform:uppercase;
 }
 
 /*Layout*/
 
 .container-wide{
     width:100%;
+    margin:0 auto;
 }
 
 .container-narrow{
@@ -55,6 +58,10 @@ h2{
     text-align: left;
 }
 
+.page-number-list{
+    padding:0.5em 0;
+}
+
 
 /*header*/
 .header{
@@ -67,7 +74,6 @@ header ul{
     display: flex;
     padding:0;
     margin:0;
-
     margin-bottom:0;  
 }
 
@@ -83,16 +89,16 @@ header ul{
 }
 
 .search{
-    margin:0.5em;
-    margin-top:0;
-    margin-bottom:0;
-}
+    padding:0.5em;
+    margin-left:0.5em;
+} 
 
 #search-input{
     padding:0.75em ;
+    /* margin-top:0.25em; */
 }
 
-.btn a{
+.btn {
     text-decoration: none;
     color:white;
 }
@@ -101,6 +107,13 @@ header ul{
     background-color:steelblue;
     padding:0.5em 1.25em;
     margin-left:0.6em;
+}
+
+.page-number:hover,.page-number:focus,
+.btn-search:hover
+ {
+    background-color:rgb(243, 199, 116);
+    color:steelblue;  
 }
 
 /*logo-container*/
@@ -213,7 +226,6 @@ order:-1;
 
 .lastest-stories-section{
     margin:0.5em;
-
 }
 
 .latest-story-body{
@@ -273,8 +285,7 @@ order:-1;
 
 .latest-stories-sidebar{
     padding:1em;
-    margin:0.5em 0;
-   
+    margin:0.5em 0;  
 }
 
 /*Social-media section*/
@@ -306,7 +317,6 @@ order:-1;
 /*sponspored ad section*/
 .sidebar-sponsor{
     margin:0;
-    padding:0.50em;
     margin:0.5em 0;
 }
 
@@ -346,8 +356,7 @@ order:-1;
 .image-section{
     padding:1em;
     margin:0.5em 0;
-    background-color: #efefef;
-    
+    background-color: #efefef; 
 }
 
 
@@ -362,6 +371,7 @@ order:-1;
     width:25%;
     padding:0.5em;
     margin:0.5em;
+    object-fit: contain;
 }
 
 .flickr-images-cat li{
@@ -370,25 +380,34 @@ order:-1;
     margin:0; */
 }
 
-.flickr-images-cat-button{
+.flickr-images-cat-buttons{
     padding:0;
     margin:0;
     display:flex;
     flex-wrap: wrap;
     padding:0.5em;
+    width:90%;
 }
 
-
-.flickr-images-cat-button a{
-    text-decoration: none;
-    color:white;
-    padding:0.25em;
-}
 
 .btn-cat{
-    padding:.10em 0.30em; 
+    text-decoration: none;
+    color:white;
+    padding:.25em 1em;
     background-color: gray;
-    margin: 0.25em;
+    
+}
+
+.flickr-cat-list-item{
+   padding:0.25em;
+   margin: 0.25em;
+   
+}
+
+.btn-cat:hover,.btn-cat:focus{
+background-color: steelblue;
+color:orange;
+
 }
 
 /*Images info section*/
@@ -409,7 +428,6 @@ order:-1;
     margin:0;
     display:flex;
     text-align: left;;
-
 }
 
 .footer-items{
@@ -424,7 +442,6 @@ order:-1;
 
 .copyright{
     text-align: right;
-
 }
 
 
