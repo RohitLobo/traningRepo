@@ -116,6 +116,21 @@ header ul{
     color:steelblue;  
 }
 
+@media (min-width:650px){
+    body{
+        background-color: wheat;
+
+    }
+
+    .header{
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+
+
 /*logo-container*/
 
 .logo-container {
@@ -130,6 +145,22 @@ header ul{
 display:block;
 max-width:100%;
 order:-1;
+}
+
+@media (min-width:650px){
+.logo-container{
+    flex-direction: row;
+    justify-content:space-around;
+}
+.site-title{
+    order:-1;
+}
+.logo{
+    max-height:70vh;
+    height:90vh;
+}
+
+
 }
 
 
