@@ -182,6 +182,18 @@ order:-1;
     color:green;
 }
 
+@media {
+    .nav-bar ul{
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    .nav-bar li{
+        padding:1em;
+
+    }
+
+}
 
 /*promoted-article-section*/
 
