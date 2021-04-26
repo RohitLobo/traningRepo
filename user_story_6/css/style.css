@@ -1,6 +1,12 @@
+:root{
+    --bg-menu:rgba(151, 144, 144, 0.692);
+
+}
+
 *{
     box-sizing: border-box;
 }
+
 
 body{
     margin:0
@@ -65,7 +71,7 @@ h2{
 
 /*header*/
 .header{
-    background-color: rgba(151, 144, 144, 0.692);
+    background-color:  var(--bg-menu);
     padding:0.5em;
     margin-bottom: 0.5em;
 }
@@ -111,7 +117,8 @@ header ul{
 
 .page-number:hover,.page-number:focus,
 .btn-search:hover,.btn-search:focus,
-.btn-pages:hover, .btn-pages:focus
+.btn-pages:hover, .btn-pages:focus,
+.nav-bar a:hover,.nav-bar a:focus
  {
     background-color:rgb(243, 199, 116);
     color:steelblue;  
@@ -140,6 +147,7 @@ header ul{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: var(--bg-menu);
 }
 
 .logo {
@@ -148,43 +156,83 @@ max-width:100%;
 order:-1;
 }
 
+
+
 @media (min-width:650px){
 .logo-container{
     flex-direction: row;
     justify-content:space-around;
 }
+
 .site-title{
     order:-1;
+    
 }
+
 .logo{
     max-height:70vh;
     height:90vh;
 }
 
-
 }
 
 
 /*nav-bar*/
+.menu{
+text-align: center;
+background-color: var(--bg-menu);
+}
 
 .nav-bar{
-    text-align:center;
+    display:none
 }
 
 .nav-bar ul{
     list-style: none;
     padding:0;
     margin:0;
-    background-color: gray;
+    background-color: var(--bg-menu);
 }
-.nav-bar li{
-    padding:0.5em;
-}
+
 
 .nav-bar a{
     text-decoration: none;
     color:green;
+    display:block;
+    
 }
+
+
+.nav-bar-checkbox:checked ~ nav{
+    display:block;
+}
+
+.menu-icon,.menu-icon::before,.menu-icon::after{
+display:block;
+background-color: red;
+
+height:2px;
+width:2em;
+border-radius:2px;
+position:relative;
+top:0;
+left:0;
+}
+
+.menu-icon::before,.menu-icon::after{
+    content:"";
+    position:absolute;
+}
+.menu-icon::before{
+    bottom:7px;
+
+}
+
+.menu-icon::after{
+    top:7px;
+
+}
+
 
 @media (min-width:550px) {
     
