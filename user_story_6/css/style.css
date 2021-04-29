@@ -184,7 +184,10 @@ background-color: var(--bg-menu);
 }
 
 .nav-bar{
-    display:none
+    /* display:none */
+    transform:scale(1,0);
+    transform-origin: top;
+    transition : transform 200ms ease-in-out;
 }
 
 .nav-bar ul{
@@ -199,23 +202,27 @@ background-color: var(--bg-menu);
     text-decoration: none;
     color:green;
     display:block;
+    /* opacity:0; */
     
 }
 
+.nav-bar-checkbox{
+    display:none;
 
+}
 .nav-bar-checkbox:checked ~ nav{
-    display:block;
+    transform:scale(1,1);
+    opacity:1;
 }
 
 .menu-icon,.menu-icon::before,.menu-icon::after{
 display:block;
-background-color: red;
-
+background-color: forestgreen;
 height:2px;
 width:2em;
 border-radius:2px;
 position:relative;
-top:0;
+bottom:160px;
 left:0;
 }
 
@@ -225,7 +232,6 @@ left:0;
 }
 .menu-icon::before{
     bottom:7px;
-
 }
 
 .menu-icon::after{
@@ -334,7 +340,8 @@ left:0;
 }
 
 .latest-stories-image{
-    order:-1;
+    /* order:-1; */
+    max-width:100%;
 }
 
 .latest-stories-info{
@@ -406,6 +413,43 @@ left:0;
     padding:0.50em;
 }
 
+@media (max-width:1027px){
+    .social-media-main{
+        width: 33%;
+
+    }
+}
+
+@media (min-width:1027px){
+    .latest-stories-main-container{
+        width:60%;
+
+    }
+
+    .latest-stories-sidebar{
+        width:35%;
+        border-left:2px solid silver;
+    }
+
+   .lastest-stories-section{
+        display: flex;
+        
+   }
+
+   .latest-stories-image{
+    max-width: 550px;
+
+   }
+
+   .latest-stories-sub-container{
+   display:flex;
+   flex-direction: row;  
+   margin-bottom:2em; 
+
+    }
+
+  }
+
 
 /*sponspored ad section*/
 .sidebar-sponsor{
@@ -416,7 +460,7 @@ left:0;
 
 
  .publicity-image {
-    max-width: 100%;
+    max-width:100%;
     display: inline-block;
 } 
 
