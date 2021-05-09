@@ -12,7 +12,7 @@ body{
     flex-direction: column;
     justify-content: center;
     width:100%;
-    height:100vh;  
+    height:80vh;  
 }
 
 h1,p{
@@ -55,13 +55,14 @@ h1{
     height:80%;
 }
 
+
 .image-container{
     width:100%;
     height:100%;  
     border-radius: 2% 2% 0% 0%;
     background-image: url(../images/image-header-desktop.jpg);
     background-repeat:no-repeat;
-    /* background-position:cover; */
+    background-position:contain;
     background-size:contain ;
     background-attachment: contain;
     background-color: #9650C0;
@@ -75,7 +76,33 @@ h1{
     padding:1em;
     border-radius: 0% 0% 2% 2%;    
     width: 100%;
+    /* height:90%; */
 }
+
+@media (min-width:679px){
+    .main-container{
+        flex-direction: row; 
+
+    }
+
+    .image-container{
+        padding:0;
+        background-size:cover;
+        background-attachment: contain;
+        background-position: contain;
+        background-repeat: no-repeat;
+        /* padding-right:58%; */
+        border-radius: 0% 2% 2% 0%;  
+    }
+
+    .content-container{
+        order:-1;
+        border-radius: 2% 0% 0% 2%;   
+    }
+
+
+}
+
 
 .title,.sub-title{
     padding:0.5em;
@@ -93,6 +120,16 @@ h1{
 .stats-container{
     padding:1em;
     width:100%;
+}
+
+@media (min-width:679px){
+    .stats-container{
+        display: flex;
+        flex-direction: row; 
+        justify-content: center;
+    }
+
+
 }
 
 .stats{
