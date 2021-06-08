@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+body{
+    font-size:0.9rem;
+    letter-spacing:1.2px ;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+h1{
+    font-size:1.50rem;
+    margin:0.5em 0 ; 
+}
+
+h2{
+    font-size:1.25rem;
+    margin:0.5em 0 ; 
+}
+
+.price-card-price{
+    font-size:1.50rem;
+    /* margin:0.5em;  */
+}
+
+.price-card-period{
+    font-size:0.9rem ;
+}
+
+
+.main-container{
+    width:80%;
+    background-color:gainsboro;
+    border-radius:3% 3% 3% 3%;
+    margin-top:1em;
+    padding:0.75em 1.5em;
+    text-align: left;
+    
+}
+
+
+/*main content*/
+.main-content,.support-content,.offer-card{
+    margin:1em 0;
+
+}
+
+.main-content-sub-title,.main-content-description{
+    margin:1rem 0 ;
+}
+
+/*price-card*/
+
+
+.price-card-price{
+    margin:1rem 0 0 0 ;
+}
+
+.price-card-description{
+    margin-bottom:2rem;
+}
+
+.button{
+    text-align: center;
+    margin:0 auto;    
+
+}
+
+.btn{
+    text-decoration: none;
+    padding:1em 8.50em;
+    background-color: green;
+    color:white;
+    margin:0 auto;   
+
+}
+
+
