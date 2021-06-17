@@ -1,3 +1,10 @@
+:root{
+    --orange--card:#E28525;
+    --turquoise--card:#2BB3B1;
+    --light-blue--card:#4ABEBD;
+ }
+
+
 *{
     box-sizing: border-box;
     padding:0;
@@ -11,74 +18,122 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    height:100vh;
+    background-color:#E6EFF6;
+}
+
+.price-card> * , .offer-card > * , .main-content > *{
+    margin-left:36px;
+}
+
+.main-content,.price-card,.offer-card{
+    margin:28px 0px;
+
 }
 
 
 h1{
     font-size:1.50rem;
-    margin:0.5em 0 ; 
+    padding:0.5em 0;
+    color:var(--turquoise--card)
+    
 }
 
 h2{
     font-size:1.25rem;
-    margin:0.5em 0 ; 
 }
 
 .price-card-price{
     font-size:1.50rem;
-    /* margin:0.5em;  */
-}
+    }
 
 .price-card-period{
     font-size:0.9rem ;
 }
 
+.support-content{
+    color:white;
+
+}
 
 .main-container{
     width:80%;
     background-color:gainsboro;
-    border-radius:3% 3% 3% 3%;
-    margin-top:1em;
-    padding:0.75em 1.5em;
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     
 }
 
-
-/*main content*/
-.main-content,.support-content,.offer-card{
-    margin:1em 0;
-
+.main-content{
+    background-color: white;
+    border-radius:3% 3% 0% 0%;
+    margin:0;
 }
 
-.main-content-sub-title,.main-content-description{
-    margin:1rem 0 ;
+/*main content*/
+.main-content-sub-title{
+    padding:0.25em;
+    color:#BFDF32;
+    font-weight: bolder;
+}
+
+.main-content-description{
+color:gray;
+}
+
+.main-content-description,.price-card-description,.offer-card-description{
+    padding:1em 5em; 
+    padding-left:0;
+    
 }
 
 /*price-card*/
 
-
-.price-card-price{
-    margin:1rem 0 0 0 ;
+.price-card{
+    background-color: var(--turquoise--card);
+    padding:1.5em 0;
+    width:100%;
+    margin:0;
+   
 }
 
-.price-card-description{
-    margin-bottom:2rem;
+.price-card-title,.price-card-description{
+margin-bottom:2em;
+padding-top:0;
+/* padding-bottom:0.5em; */
 }
+
 
 .button{
-    text-align: center;
-    margin:0 auto;    
-
+    padding-bottom:2em;
+    width:100%;
+    margin:0 auto;
+    margin-left:36px;
+    /* text-align:center; */
+               
 }
 
 .btn{
     text-decoration: none;
-    padding:1em 8.50em;
-    background-color: green;
+    background-color: #BFDF32;
     color:white;
-    margin:0 auto;   
-
+    padding:1.5em 10em;
+    border-radius:5px;
+    text-align: center;
+    font-weight: bolder;
+              
 }
+/*offer-card*/
+
+.offer-card{
+    padding:2.5em 0;
+    background-color: var(--light-blue--card);
+    border-radius:0% 0% 3% 3%;
+}
+
+
+
 
 
