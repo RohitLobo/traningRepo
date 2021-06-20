@@ -21,16 +21,13 @@ body{
     justify-content: center;
     height:100vh;
     background-color:#E6EFF6;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .price-card> * , .offer-card > * , .main-content > *{
     margin-left:36px;
 }
 
-.main-content,.price-card,.offer-card{
-    margin:28px 0px;
-
-}
 
 
 h1{
@@ -63,8 +60,20 @@ h2{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+    max-width: 375px;
 }
+
+.main-content-description,.price-card-description,.offer-card-description{
+    padding:1em 5em; 
+    padding-left:0;
+}
+
+.price-card,.main-content,.offer-card{
+    padding:3.5em 1em;
+} 
+
+/*main content*/
+
 
 .main-content{
     background-color: white;
@@ -72,9 +81,8 @@ h2{
     margin:0;
 }
 
-/*main content*/
+
 .main-content-sub-title{
-    padding:0.25em;
     color:#BFDF32;
     font-weight: bolder;
 }
@@ -83,56 +91,90 @@ h2{
 color:gray;
 }
 
-.main-content-description,.price-card-description,.offer-card-description{
-    padding:1em 5em; 
-    padding-left:0;
-    
-}
 
 /*price-card*/
 
 .price-card{
     background-color: var(--turquoise--card);
-    padding:1.5em 0;
-    width:100%;
-    margin:0;
-   
-}
-
-.price-card-title,.price-card-description{
-margin-bottom:2em;
-padding-top:0;
-/* padding-bottom:0.5em; */
-}
-
-
-.button{
-    padding-bottom:2em;
     width:100%;
     margin:0 auto;
-    margin-left:36px;
-    /* text-align:center; */
-               
+    padding-bottom:2em;
+}
+
+.price-card-title{
+    margin-bottom:1em;
+    padding-top:0;
+}
+
+.price-card-description{
+    padding-top:0;
+
+}
+
+.price-card-period{
+    margin-left:0.5em;
+    color:lightgray
+
+}
+
+.button{
+    padding-bottom:0.5em;
+    text-align: center;
+    margin:0 36px;  
 }
 
 .btn{
     text-decoration: none;
     background-color: #BFDF32;
     color:white;
-    padding:1.5em 10em;
+    width:75%;
+    padding:1em 2.5em;
     border-radius:5px;
-    text-align: center;
     font-weight: bolder;
-              
+    display: block;     
 }
+
+.btn:hover,.btn:focus{
+    background-color:white;
+    color: #BFDF32;
+    transition:all 0.5s ease-out;
+    transform:scale(1.1);
+}
+
 /*offer-card*/
 
 .offer-card{
-    padding:2.5em 0;
     background-color: var(--light-blue--card);
     border-radius:0% 0% 3% 3%;
 }
 
+
+@media screen and (min-width:650px){
+    .main-container{
+        max-width:750px;
+
+    }
+
+    .support-content{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .price-card,.offer-card{
+        width:50%;
+    }
+
+    .price-card{
+        border-bottom-left-radius: 3%;
+
+    }
+
+    .offer-card{
+        border-bottom-left-radius: 0;
+
+    }
+
+}
 
 
 
