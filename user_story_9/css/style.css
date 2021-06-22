@@ -60,7 +60,7 @@ h2{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 375px;
+    max-width: 450px;
 }
 
 .main-content-description,.price-card-description,.offer-card-description{
@@ -148,8 +148,11 @@ color:gray;
     border-radius:0% 0% 3% 3%;
 }
 
+.offer-card-description >p{
+    margin-top:0.5em;
 
-@media screen and (min-width:650px){
+}
+@media screen and (min-width:750px){
     .main-container{
         max-width:750px;
 
