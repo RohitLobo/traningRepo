@@ -1,0 +1,34 @@
+:root{
+    --blue-header:#3EBFFF;
+
+}
+
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    width:100%;
+    margin:0;
+    padding:0;
+}
+
+.tag-line-arrow{
+    background-color: var(--blue-header) ;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-bar-list{
+    list-style: none;
+}
+
+.nav-bar-list{
+    text-decoration: none;    
+}
