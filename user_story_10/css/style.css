@@ -31,12 +31,12 @@ body{
 /*typography*/
 
 h1{
-    font-size:2.5rem;
+    font-size:3.5rem;
     color:white;
 }
 
 h2{
-    font-size:3.5rem;
+    font-size:4rem;
     text-transform: uppercase;
     color:white;
 }
@@ -68,7 +68,7 @@ nav {
     justify-content: space-between;
     background-color: var(--blue-header) ;
     padding:1em;
-    z-index:3;
+    z-index:4;
 }
 
 .nav-bar-list{
@@ -79,6 +79,14 @@ nav {
     text-decoration: none;  
 }
 
+.nav-bar-link{
+    font-size: 2.5rem;
+}
+
+.nav-bar-link:visited{
+    color:black;
+
+}
 
 /*tag-line*/
 .tag-line-tile{
@@ -93,6 +101,7 @@ nav {
     margin:0 auto;
     padding:1em;
     z-index: 2;
+    
 }
 
 .tag-line-arrow,.tag-line-image{
@@ -104,14 +113,21 @@ nav {
     max-width:100%; 
     width:100%;
     height:auto;
+    position: relative;
+    bottom:200px;
+    
 }
+
+
 
 
 .tag-line-arrow{
     max-width:100%; 
-    width:10%;
-    z-index: 1;
+    width:15%;
+    z-index: 3;
     margin-top:2em;
+    position: relative;
+    top:100px;
 }
  
 
@@ -131,6 +147,36 @@ nav {
 .usp-block-1-image-tile,.usp-block-2-image-tile,.usp-block-3-image{
 order:-1;
 }
+
+
+.usp-block-1-description-tile,.usp-block-2-description-tile{
+    padding:4em 1.5em 8em;
+}
+
+.usp-tile-heading,.usp-tile-explanation{
+    padding:1em;
+    text-align: center;
+    width:100%;
+}
+
+.usp-tile-heading{
+    font-size:4.5rem;
+}
+
+.usp-tile-explanation{
+    font-size:2rem;
+    color:#AFAFAF
+}
+
+.usp-tile-button{
+    margin-top:1em;
+    font-size:3rem;
+    text-decoration: none;
+    padding:1em;
+    color:black;
+    cursor: pointer;
+}
+
 
 .usp-block-3-description{
 margin-top:-25em;
@@ -160,7 +206,7 @@ height:25em;
 
 /*testimonials*/
 
-.testimony-tile,.testimony-quote,.testimony-tile-heading{
+.testimony-quote,.testimony-tile-heading{
     padding:1em;
 }
 
@@ -172,18 +218,20 @@ height:25em;
 color:#AFAFAF;
 }
 
+.testimony-tile{
+    padding:4em 1em;
+}
+
 .testimony-tile-heading{
     font-size: 3rem;
     text-transform: uppercase;
-    
-
+    margin-bottom:1em;  
 }
 
 .testimony-quote{
     order:1;
+    color:#6c7a86 ;
 }
-
-
 
 .testimony-name{
     font-weight:bolder ;
@@ -196,13 +244,70 @@ color:#AFAFAF;
 .testimony-container{
     display:flex;
     flex-direction: column;
-    margin-bottom:3.5em;
+    margin-bottom:4em;
 }
 
 .testimony-image{
     border-radius:50%;
     order:-1;
     max-width: 100%;
+    padding:1em;
     width:25%;
     margin:0 auto;
 }
+
+
+/*image-tile*/
+.image-tile-picture{
+    max-width: 100%;
+    width:100%;
+
+}
+.image-tile-1,.image-tile-2{
+    display: flex;
+    width:100%;
+}
+
+/*footer*/
+footer{
+    background-color:#90D4C5;
+    padding:3em;
+}
+
+.footer-logo{
+    color:#2d584f;
+    font-size:5rem;
+    padding:0.5em;
+}
+
+.footer-links-container ul{
+    list-style: none;
+    padding:1em;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.footer-links{
+    font-size:3rem;
+    text-decoration: none;
+    color:#499484
+    
+}
+
+.social-media{
+    width:100%;
+    padding:1em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-media-icon{
+    max-width: 100%;
+    width: 20%;
+    margin-top:5em;
+    padding:2em;
+    display:block;
+}
+
+
