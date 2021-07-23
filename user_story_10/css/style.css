@@ -1,6 +1,7 @@
 :root{
     --blue-header:#3EBFFF;
-
+    --yellow:#FFD302;
+    --pink:#FE6F61
 }
 
 
@@ -71,7 +72,11 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     padding:1em;
-    z-index:4;
+    z-index:4;  
+}
+
+.nav-bar{
+    width: 100%;
 }
 
 .hamburger-menu{
@@ -121,31 +126,60 @@ position: relative;
     display: block;
 }
 
+
 .nav-bar-list{
     list-style: none;
-    border:2px red solid;
     position:relative;
-    transform:translate(-100%,20%);
+    transform:translate(-15%,70%);
     background-color: white;
-    padding:2em;
+    padding:2.5em 10em ; 
+    z-index:999;
     
 }
 
+.nav-bar-list li{
+    margin:1.5em 0;
+    padding:2.5em;
+}
+
 .nav-bar-link{
+    font-size: 3.5rem;
+    font-weight: bolder;
     text-decoration: none;  
-    margin-bottom:1em;
-    padding:0.5em;
-    
+    /* margin-bottom:1em; */
+    margin:2em 0 ;
+    color:silver;
 }
 
-.nav-bar-link{
-    font-size: 2.5rem;
-}
-
-.nav-bar-link:visited{
+.nav-bar-link:hover,.nav-bar-link:focus{
     color:black;
 
 }
+
+.nav-bar-list li{
+    margin:2.5em 0;
+    padding:0.5em 3.5em;
+}
+
+
+.nav-bar-link:hover,.nav-bar-link:focus{
+    color:black;
+}
+
+/* .clipped-portion:first-child{
+    background-color: var(--blue-header) ; 
+    width:inherit;
+
+} */
+
+.nav-bar-list li:last-child{
+    background-color: var(--yellow);
+    z-index:99;
+    border-radius:75px;
+    padding:1.5em 3em;
+    text-transform: uppercase;
+}
+
 
 
 
@@ -161,7 +195,7 @@ position: relative;
     width:75%;
     margin:0 auto;
     padding:1em;
-    z-index: 2;
+    z-index: 1;
     
 }
 
@@ -174,13 +208,8 @@ position: relative;
     max-width:100%; 
     width:100%;
     height:auto;
-    /* position: relative;
-    bottom:200px;
-     */
     transform:translate(0px,-30%);
 }
-
-
 
 
 .tag-line-arrow{
@@ -192,7 +221,6 @@ position: relative;
     top:100px;
 }
  
-
 
 /* usp-block*/
 
@@ -239,7 +267,17 @@ order:-1;
     cursor: pointer;
 }
 
+.btn-yellow:hover,.btn-yellow:focus,.btn-yellow:active{
+    border-bottom: 10px var(--yellow) solid;
+    cursor: pointer;
+    padding-bottom:1px;
+}
 
+.btn-pink:hover,.btn-pink:focus,.btn-pinkactive{
+    border-bottom: 10px var(--pink) solid;
+    cursor: pointer;
+    padding-bottom:1px;
+}
 .usp-block-3-description{
 margin-top:-25em;
 height:25em;
@@ -293,6 +331,7 @@ color:#AFAFAF;
 .testimony-quote{
     order:1;
     color:#6c7a86 ;
+    font-size: 2.5rem;
 }
 
 .testimony-name{
@@ -362,6 +401,12 @@ footer{
     padding:1em;
     display: flex;
     justify-content: space-around;
+    
+}
+
+.social-media div {
+    border:2px red solid;
+    display: block;
 }
 
 .social-media-icon{
@@ -372,4 +417,8 @@ footer{
     display:block;
 }
 
+.footer-links:hover,.footer-links:focus{
+    color:white;
+    cursor: pointer;
+}
 
